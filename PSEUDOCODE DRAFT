@@ -1,0 +1,16 @@
+//FOREWORD: This is the initial draft for the pseudocode of this project. Any commits are not final.
+
+//PURPOSE: For this project, a program for a resturant will be created. This program will be designed to guide customers
+through a digital menu, where they can order food, see what they have ordered, and view the total bill before paying.
+
+//CONCEPT AND DESIGN: A digital menu for an American restaurant will utilize modular programming, consisting of five subprograms seen
+from the main menu. The main menu being displayed will have "Appetizers," "Entrees," "Sides," "Desserts," and "Drinks." Each of the
+individual components will be assigned a number. By inputting a number, customers will be able to order the item that corresponds to
+that number. Loops will be utilized to allow the customer to access the main menu as many times as they need to. An accumulator will add
+the total amount due, with all calculations accounted for. The inputs for each item will be stored, and displayed along the main menu
+in a section below it, stylized with ASCII art. 
+
+BEGIN
+
+display "Welcome to Little Valley Diner!"   //Provisional name for the American resturant
+
