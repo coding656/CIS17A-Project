@@ -20,6 +20,8 @@ display "Menu"
 display "Please select '6' when your order is complete. A prompt will ask to confirm your decision, and your total will be displayed."
 display "Selecting '0' will clear your order of all its selections."
 display "1. Appetizers 2. Entrees 3. Sides 4. Desserts 5. Beverages 6. Order finished 0. Clear order" //Option selection
+if input != "1" or "2" or "3" or "4" or "5" or "6" or "0" //input validation
+display "ERROR: Please enter a valid number."
 if input = "6"
 display "Here are the items you have selected."
 display selected items
@@ -36,7 +38,7 @@ clear cart
 return to main menu
 if input = "1"
 display "Select your appetizer."
-display "1. Chicken Wings 2. Mozzerella Sticks 3. Chips and Dip
+display "1. Chicken Wings 2. Mozzarella Sticks 3. Chips and Dip
 if input = "1" or "2" or "3"
 add item to cart
 add price of item to accumulator
@@ -54,6 +56,8 @@ display "Menu"
 display "Please select '6' when your order is complete. A prompt will ask to confirm your decision, and your total will be displayed."
 display "Selecting '0' will clear your order of all its selections."
 display "1. Appetizers 2. Entrees 3. Sides 4. Desserts 5. Beverages 6. Order finished 0. Clear order" //Option selection
+if input != "1" or "2" or "3" or "4" or "5" or "6" or "0" //input validation
+display "ERROR: Please enter a valid number."
 if input = "6"
 display "Here are the items you have selected."
 display selected items
@@ -94,6 +98,8 @@ display "Menu"
 display "Please select '6' when your order is complete. A prompt will ask to confirm your decision, and your total will be displayed."
 display "Selecting '0' will clear your order of all its selections."
 display "1. Appetizers 2. Entrees 3. Sides 4. Desserts 5. Beverages 6. Order finished 0. Clear order" //Option selection
+if input != "1" or "2" or "3" or "4" or "5" or "6" or "0" //input validation
+display "ERROR: Please enter a valid number."
 if input = "6"
 display "Here are the items you have selected."
 display selected items
@@ -126,6 +132,8 @@ display "Menu"
 display "Please select '6' when your order is complete. A prompt will ask to confirm your decision, and your total will be displayed."
 display "Selecting '0' will clear your order of all its selections."
 display "1. Appetizers 2. Entrees 3. Sides 4. Desserts 5. Beverages 6. Order finished 0. Clear order" //Option selection
+if input != "1" or "2" or "3" or "4" or "5" or "6" or "0" //input validation
+display "ERROR: Please enter a valid number."
 if input = "6"
 display "Here are the items you have selected."
 display selected items
@@ -173,6 +181,8 @@ display "Menu"
 display "Please select '6' when your order is complete. A prompt will ask to confirm your decision, and your total will be displayed."
 display "Selecting '0' will clear your order of all its selections."
 display "1. Appetizers 2. Entrees 3. Sides 4. Desserts 5. Beverages 6. Order finished 0. Clear order" //Option selection
+if input != "1" or "2" or "3" or "4" or "5" or "6" or "0" //input validation
+display "ERROR: Please enter a valid number."
 if input = "6"
 display "Here are the items you have selected."
 display selected items
