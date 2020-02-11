@@ -12,7 +12,7 @@ in a section below it, stylized with ASCII art.
 
 BEGIN
 
-display "Welcome to Little Valley Diner!"   //Provisional name for the American resturant
+display "Welcome to Little Valley Diner!"   //Provisional name for the American restaurant
 create structures for items 
 assign prices for each item
 
