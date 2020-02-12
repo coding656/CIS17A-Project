@@ -20,45 +20,12 @@ display "Menu"
 display "Please select '6' when your order is complete. A prompt will ask to confirm your decision, and your total will be displayed."
 display "Selecting '0' will clear your order of all its selections."
 display "1. Appetizers 2. Entrees 3. Sides 4. Desserts 5. Beverages 6. Edit order 7. Complete order 0. Clear order" //Option selection
+
 if input != "1" or "2" or "3" or "4" or "5" or "6" or "7" or "0" //input validation
 display "ERROR: Please enter a valid number."
 loop back to decision
-if input = "7"
-display "Here are the items you have selected."
-display selected items
-display total
-display "Would you like to confirm your order?
-display "1. Yes 2. No"
-if input = "1" 
-display "Processing order..."
-display "Order processed. Thank you for your order! Your food will arrive shortly."
-if input = "2" 
-return to main menu
-if input != "1" or "2"
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "0" 
-clear cart
-return to main menu
-if input = "6"
-display cart
-display "Please input the number of the item you wish to edit."
-display "If you would like to back out, please type "b"
-if input = NUM
-display "Remove item from cart?"
-display "1. Yes 2. No"
-if input = "1"
-remove item from cart
-if input = "2"
-loop cart display
-if input != "1" or "2" 
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "b"
-display main menu
-if input != NUM or "b"
-display "ERROR: Please enter a valid character."
-loop back to decision
+
+
 if input = "1"
 display "Select your appetizer."
 display "1. Chicken Wings 2. Mozzarella Sticks 3. Chips and Dip
@@ -81,49 +48,7 @@ loop back to decision
 display items in cart and current total 
 
 
-display "Menu"
-display "Please select '6' when your order is complete. A prompt will ask to confirm your decision, and your total will be displayed."
-display "Selecting '0' will clear your order of all its selections."
-display "1. Appetizers 2. Entrees 3. Sides 4. Desserts 5. Beverages 6. Edit order 7. Complete order 0. Clear order" //Option selection
-if input != "1" or "2" or "3" or "4" or "5" or "6" or "7" or "0" //input validation
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "7"
-display "Here are the items you have selected."
-display selected items
-display total
-display "Would you like to confirm your order?
-display "1. Yes 2. No"
-if input = "1" 
-display "Processing order..."
-display "Order processed. Thank you for your order! Your food will arrive shortly."
-if input = "2" 
-return to main menu
-if input != "1" or "2"
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "0" 
-clear cart
-return to main menu
-if input = "6"
-display cart
-display "Please input the number of the item you wish to edit."
-display "If you would like to back out, please type "b"
-if input = NUM
-display "Remove item from cart?"
-display "1. Yes 2. No"
-if input = "1"
-remove item from cart
-if input = "2"
-loop cart display
-if input != "1" or "2" 
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "b"
-display main menu
-if input != NUM or "b"
-display "ERROR: Please enter a valid character."
-loop back to decision
+
 if input = "2"
 display "Select your entree."
 display "1. Burger 2. Veggie Burger 3. Ribs 4. Chicken Sandwich 5. Steak"
@@ -152,49 +77,7 @@ display "ERROR: Please enter a valid number."
 loop back to decision
 display items in cart and current total 
 
-display "Menu"
-display "Please select '6' when your order is complete. A prompt will ask to confirm your decision, and your total will be displayed."
-display "Selecting '0' will clear your order of all its selections."
-display "1. Appetizers 2. Entrees 3. Sides 4. Desserts 5. Beverages 6. Edit order 7. Complete order 0. Clear order" //Option selection
-if input != "1" or "2" or "3" or "4" or "5" or "6" or "7" or "0" //input validation
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "7"
-display "Here are the items you have selected."
-display selected items
-display total
-display "Would you like to confirm your order?
-display "1. Yes 2. No"
-if input = "1" 
-display "Processing order..."
-display "Order processed. Thank you for your order! Your food will arrive shortly."
-if input = "2" 
-return to main menu
-if input != "1" or "2"
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "0" 
-clear cart
-return to main menu
-if input = "6"
-display cart
-display "Please input the number of the item you wish to edit."
-display "If you would like to back out, please type "b"
-if input = NUM
-display "Remove item from cart?"
-display "1. Yes 2. No"
-if input = "1"
-remove item from cart
-if input = "2"
-loop cart display
-if input != "1" or "2" 
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "b"
-display main menu
-if input != NUM or "b"
-display "ERROR: Please enter a valid character."
-loop back to decision
+
 if input = "3"
 display "Select your side."
 display "1. Fries 2. Coleslaw 3. Salad 4. Fruit Bowl 5. Mashed Potatoes 6. Macaroni and Cheese"
@@ -215,49 +98,7 @@ display "ERROR: Please enter a valid number."
 loop back to decision
 display items in cart and current total 
 
-display "Menu"
-display "Please select '6' when your order is complete. A prompt will ask to confirm your decision, and your total will be displayed."
-display "Selecting '0' will clear your order of all its selections."
-display "1. Appetizers 2. Entrees 3. Sides 4. Desserts 5. Beverages 6. Edit order 7. Complete order 0. Clear order" //Option selection
-if input != "1" or "2" or "3" or "4" or "5" or "6" or "7" or "0" //input validation
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "7"
-display "Here are the items you have selected."
-display selected items
-display total
-display "Would you like to confirm your order?
-display "1. Yes 2. No"
-if input = "1" 
-display "Processing order..."
-display "Order processed. Thank you for your order! Your food will arrive shortly."
-if input = "2" 
-return to main menu
-if input != "1" or "2"
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "0" 
-clear cart
-return to main menu
-if input = "6"
-display cart
-display "Please input the number of the item you wish to edit."
-display "If you would like to back out, please type "b"
-if input = NUM
-display "Remove item from cart?"
-display "1. Yes 2. No"
-if input = "1"
-remove item from cart
-if input = "2"
-loop cart display
-if input != "1" or "2" 
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "b"
-display main menu
-if input != NUM or "b"
-display "ERROR: Please enter a valid character."
-loop back to decision
+
 if input = "4"
 display "Select your dessert."
 display "1. Ice Cream 2. Cake"
@@ -293,49 +134,6 @@ display "ERROR: Please enter a valid number."
 loop back to decision
 display items in cart and current total 
 
-display "Menu"
-display "Please select '6' when your order is complete. A prompt will ask to confirm your decision, and your total will be displayed."
-display "Selecting '0' will clear your order of all its selections."
-display "1. Appetizers 2. Entrees 3. Sides 4. Desserts 5. Beverages 6. Edit order 7. Complete order 0. Clear order" //Option selection
-if input != "1" or "2" or "3" or "4" or "5" or "6" or "7" or "0" //input validation
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "7"
-display "Here are the items you have selected."
-display selected items
-display total
-display "Would you like to confirm your order?
-display "1. Yes 2. No"
-if input = "1" 
-display "Processing order..."
-display "Order processed. Thank you for your order! Your food will arrive shortly."
-if input = "2" 
-return to main menu
-if input != "1" or "2"
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "0" 
-clear cart
-return to main menu
-if input = "6"
-display cart
-display "Please input the number of the item you wish to edit."
-display "If you would like to back out, please type "b"
-if input = NUM
-display "Remove item from cart?"
-display "1. Yes 2. No"
-if input = "1"
-remove item from cart
-if input = "2"
-loop cart display
-if input != "1" or "2" 
-display "ERROR: Please enter a valid number."
-loop back to decision
-if input = "b"
-display main menu
-if input != NUM or "b"
-display "ERROR: Please enter a valid character."
-loop back to decision
 if input = "5"
 display "Select your beverage."
 display "1. Soft drink 2. Milkshake 3. Juice 4. Milk 5. Coffee 6. Water"
@@ -358,5 +156,45 @@ if input != "1 or "2"
 display "ERROR: Please enter a valid number."
 loop back to decision
 display items in cart and current total 
+
+if input = "6"
+display cart
+display "Please input the number of the item you wish to edit."
+display "If you would like to back out, please type "b"
+if input = NUM
+display "Remove item from cart?"
+display "1. Yes 2. No"
+if input = "1"
+remove item from cart
+if input = "2"
+loop cart display
+if input != "1" or "2" 
+display "ERROR: Please enter a valid number."
+loop back to decision
+if input = "b"
+display main menu
+if input != NUM or "b"
+display "ERROR: Please enter a valid character."
+loop back to decision
+
+if input = "7"
+display "Here are the items you have selected."
+display selected items
+display total
+display "Would you like to confirm your order?
+display "1. Yes 2. No"
+if input = "1" 
+display "Processing order..."
+display "Order processed. Thank you for your order! Your food will arrive shortly."
+if input = "2" 
+return to main menu
+if input != "1" or "2"
+display "ERROR: Please enter a valid number."
+loop back to decision
+
+if input = "0" 
+clear cart
+display "Your cart has been cleared."
+return to main menu
 
 END
