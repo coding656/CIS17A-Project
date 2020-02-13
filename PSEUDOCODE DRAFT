@@ -142,7 +142,7 @@ display items in cart and current total
 
 if input = "5"
 display "Select your beverage."
-display "1. Soft drink 2. Milkshake 3. Juice 4. Milk 5. Coffee 6. Water"
+display "1. Soft drink 2. Juice 3. Milk 4. Coffee 5. Water"
 if input != "1" or "2" or "3" or "4" or "5" or "6"
 display "ERROR: Please enter a valid number."
 loop back to decision
