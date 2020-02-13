@@ -172,6 +172,8 @@ display "Remove item from cart?"
 display "1. Yes 2. No"
 if input = "1"
 remove item from cart
+update cart
+loop cart display
 if input = "2"
 loop cart display
 if input != "1" or "2" 
