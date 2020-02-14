@@ -1,0 +1,208 @@
+//FOREWORD: This is the initial draft for the pseudocode of this project. Any commits are not final.
+
+//PURPOSE: For this project, a program for a resturant will be created. This program will be designed to guide customers
+through a digital menu, where they can order food, see what they have ordered, and view the total bill before paying.
+
+//CONCEPT AND DESIGN: A digital menu for an American restaurant will utilize modular programming, consisting of five subprograms seen
+from the main menu. The main menu being displayed will have "Appetizers," "Entrees," "Sides," "Desserts," and "Beverages." Each of the
+individual components will be assigned a number. By inputting a number, customers will be able to order the item that corresponds to
+that number. Loops will be utilized to allow the customer to access the main menu as many times as they need to. An accumulator will add
+the total amount due, with all calculations accounted for. The inputs for each item will be stored, and displayed along the main menu
+in a section below it, stylized with ASCII art. 
+
+BEGIN
+
+display "Welcome to Little Valley Diner!"   //Provisional name for the American restaurant
+create structures for items 
+assign prices for each item
+
+display "Menu"
+display "Please select '6' when your order is complete. A prompt will ask to confirm your decision, and your total will be displayed."
+display "Selecting '0' will clear your order of all its selections."
+display "1. Appetizers 2. Entrees 3. Sides 4. Desserts 5. Beverages 6. Edit order 7. Complete order 0. Clear order" //Option selection
+
+if input != "1" or "2" or "3" or "4" or "5" or "6" or "7" or "0" //input validation
+display "ERROR: Please enter a valid number."
+loop back to decision
+
+
+if input = "1"
+display "Select your appetizer."
+display "1. Chicken Wings 2. Mozzarella Sticks 3. Chips and Dip
+if input != "1" or "2" or "3"
+display "ERROR: Please enter a valid number."
+loop back to decision
+if input = "1" or "2" or "3"
+add item to cart
+add price of item to accumulator
+display "Item added to cart."
+display "Would you like to order another appetizer?"
+display "1. Yes 2. No"
+if input = "1"
+loop appetizer menu
+if input = "2"
+return to main menu
+if input != "1 or "2"
+display "ERROR: Please enter a valid number."
+loop back to decision
+display items in cart and current total 
+
+
+
+if input = "2"
+display "Select your entree."
+display "1. Burger 2. Veggie Burger 3. Ribs 4. Chicken Sandwich 5. Steak"
+if input != "1" or "2" or "3" or "4" or "5"
+display "ERROR: Please enter a valid number."
+loop back to decision
+if input = "1" or "2" or "3" or "4" or "5"
+"Select your first side (1 of 2)"
+display "1. Fries 2. Coleslaw 3. Salad 4. Fruit Bowl 5. Mashed Potatoes 6. Macaroni and Cheese 7. No Side"
+if input = "1" or "2" or "3" or "4" or "5 or "6" or "7"
+add item to cart
+if input != "1" or "2" or "3" or "4" or "5" or "6" or "7"
+display "ERROR: Please enter a valid number."
+loop back to decision
+"Select your first side (2 of 2)"
+display "1. Fries 2. Coleslaw 3. Salad 4. Fruit Bowl 5. Mashed Potatoes 6. Macaroni and Cheese 7. No Side"
+if input = "1" or "2" or "3" or "4" or "5 or "6" or "7"
+add item to cart
+if input != "1" or "2" or "3" or "4" or "5" or "6" or "7"
+display "ERROR: Please enter a valid number."
+loop back to decision
+add price of item(s) to accumulator
+display "Item added to cart."
+display "Would you like to order another entree?"
+display "1. Yes 2. No"
+if input = "1"
+loop entree menu
+if input = "2"
+return to main menu
+if input != "1 or "2"
+display "ERROR: Please enter a valid number."
+loop back to decision
+display items in cart and current total 
+
+
+if input = "3"
+display "Select your side."
+display "1. Fries 2. Coleslaw 3. Salad 4. Fruit Bowl 5. Mashed Potatoes 6. Macaroni and Cheese"
+if input != "1" or "2" or "3" or "4" or "5" or "6"
+display "ERROR: Please enter a valid number."
+loop back to decision
+if input = "1" or "2" or "3" or "4" or "5 or "6"
+add price of item to accumulator
+display "Item added to cart."
+display "Would you like to order another side?"
+display "1. Yes 2. No"
+if input = "1"
+loop side menu
+if input = "2"
+return to main menu
+if input != "1 or "2"
+display "ERROR: Please enter a valid number."
+loop back to decision
+display items in cart and current total 
+
+
+if input = "4"
+display "Select your dessert."
+display "1. Ice Cream 2. Cake"
+if input = "1"
+display "Select your flavor."
+display "1. Chocolate 2. Vanilla 3. Strawberry"
+if input != "1" or "2" or "3"
+display "ERROR: Please enter a valid number."
+loop back to decision
+if input = "1" or "2" or "3" 
+add price of item to accumulator
+display "Item added to cart."
+display "Would you like to order another dessert?"
+display "1. Yes 2. No"
+if input = "1"
+loop dessert menu
+if input = "2"
+return to main menu
+if input = "2"
+display "Select your flavor."
+display "1. Chocolate 2. Strawberry Shortcake 3. Tres Leches"
+if input = "1" or "2" or "3" 
+add price of item to accumulator
+display "Item added to cart."
+display "Would you like to order another dessert?"
+display "1. Yes 2. No"
+if input = "1"
+loop dessert menu
+if input = "2"
+return to main menu
+if input != "1 or "2"
+display "ERROR: Please enter a valid number."
+loop back to decision
+display items in cart and current total 
+
+if input = "5"
+display "Select your beverage."
+display "1. Soft drink 2. Juice 3. Milk 4. Coffee 5. Water"
+if input != "1" or "2" or "3" or "4" or "5" 
+display "ERROR: Please enter a valid number."
+loop back to decision
+if input = "1"
+display "Select your soft drink."
+display "1. Coke 2. Diet Coke 3. Sprite 4. Dr. Pepper 5. Orange Fanta"
+if input "1" or "2" or "3" or "4" or "5" 
+add price of item to accumulator
+display "Item added to cart."
+display "Would you like to order another beverage?"
+display "1. Yes 2. No"
+if input = "1"
+loop beverage menu
+if input = "2"
+return to main menu
+if input != "1 or "2"
+display "ERROR: Please enter a valid number."
+loop back to decision
+display items in cart and current total 
+
+if input = "6"
+display cart
+display "Please input the number of the item you wish to edit."
+display "If you would like to back out, please type "b"
+if input = NUM
+display "Remove item from cart?"
+display "1. Yes 2. No"
+if input = "1"
+remove item from cart
+update cart
+loop cart display
+if input = "2"
+loop cart display
+if input != "1" or "2" 
+display "ERROR: Please enter a valid number."
+loop back to decision
+if input = "b"
+display main menu
+if input != NUM or "b"
+display "ERROR: Please enter a valid character."
+loop back to decision
+
+if input = "7"
+display "Here are the items you have selected."
+display selected items
+display total
+display "Would you like to confirm your order?
+display "1. Yes 2. No"
+if input = "1" 
+display "Processing order..."
+display "Order processed. Thank you for your order! Your food will arrive shortly."
+if input = "2" 
+return to main menu
+if input != "1" or "2"
+display "ERROR: Please enter a valid number."
+loop back to decision
+
+if input = "0" 
+clear cart
+display "Your cart has been cleared."
+return to main menu
+
+END
