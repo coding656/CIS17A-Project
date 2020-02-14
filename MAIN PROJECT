@@ -1,1 +1,117 @@
-//This is the main project
+#include <iostream>
+#include <iomanip>
+#include <string>
+using namespace std;
+
+int main() {
+
+int input;
+double total;
+double accumulator;
+
+cout << "Welcome to Little Valley Diner\n" << endl;
+
+cout << "MENU\n" << endl;
+cout << "Please input the number corresponding to your choice.\n\n";
+cout << "1. Appetizers\n";
+cout << "2. Entrees\n";
+cout << "3. Sides\n";
+cout << "4. Desserts\n";
+cout << "5. Beverages\n";
+
+cin >> input;
+
+  if (input == 1)
+  {
+  cout << "Select your appetizer.\n";
+  cout << "1. Chicken Wings 2. Mozzarella Sticks 3. Chips and Dip\n";
+  cin >> input;
+  cout << "Item added to cart.\n";
+  
+  if (input != 1 && input != 2 && input != 3 )
+  {
+  cout << "ERROR: Please enter a valid number.\n";
+  cin >> input;
+  }
+  
+  }
+ else if (input == 2)
+ {
+  cout << "Select your entree.\n";
+  cout << "1. Burger 2. Veggie Burger 3. Ribs 4. Chicken Sandwich 5. Steak\n";
+  cout << "Select your first side (1 of 2)\n";
+  cout << "1. Fries 2. Coleslaw 3. Salad 4. Fruit Bowl 5. Mashed Potatoes 6. Macaroni and Cheese 7. No Side\n";
+  cout << "Select your second side (2 of 2)\n";
+  cout << "1. Fries 2. Coleslaw 3. Salad 4. Fruit Bowl 5. Mashed Potatoes 6. Macaroni and Cheese 7. No Side\n";
+  cout << "Item added to cart.\n";
+  cout << "Would you like to order another entree?\n";
+  cout << "ERROR: Please enter a valid number.\n";
+ }
+
+ else if (input == 3)
+ {
+  cout << "Select your side.\n";
+  cout << "1. Fries 2. Coleslaw 3. Salad 4. Fruit Bowl 5. Mashed Potatoes 6. Macaroni and Cheese\n";
+  cout << "Item added to cart.\n";
+  cout << "Would you like to order another side?\n";
+  cout << "ERROR: Please enter a valid number.\n";
+ }
+
+ else if (input == 4)
+ {
+  cout << "Select your dessert.\n";
+  cout << "1. Ice Cream 2. Cake\n";
+  cout << "Select your flavor.\n";
+  cout << "1. Chocolate 2. Vanilla 3. Strawberry\n";
+  cout << "1. Chocolate 2. Strawberry Shortcake 3. Tres Leches\n";
+  cout << "Item added to cart.\n";
+  cout << "Would you like to order another dessert?\n";
+  cout << "ERROR: Please enter a valid number.\n";
+ }
+
+ else if (input == 5)
+ {
+  cout << "Select your beverage.\n";
+  cout << "1. Soft Drink 2. Juice 3. Milk 4. Coffee 5. Water\n";
+  cout << "Select your soft drink.\n";
+  cout << "1. Coke 2. Diet Coke 3. Sprite 4. Dr. Pepper 5. Orange Fanta\n";
+  cout << "Item added to cart.\n";
+  cout << "Would you like to order another beverage?\n";
+  cout << "ERROR: Please enter a valid number.\n";
+ }
+
+ else if (input == 6)
+ {
+  cout << "Please input the number of the item you wish to edit.\n";
+  cout << "If you would like to back out, please type the letter 'b'.\n";
+  cout << "Remove item from cart?\n";
+  cout << "1. Yes 2. No\n";
+  cout << "ERROR: Please enter a valid number.\n";
+  cout << "ERROR: Please enter a valid character.\n";
+ }
+
+ else if (input == 7)
+ {
+  cout << "Would you like to confirm your order?\n";
+  cout << "1. Yes 2. No\n";
+  cout << "Processing order...\n";
+  cout << "Order processed. Thank you for your order! Your food will arrive shortly.";
+  cout << "ERROR: Please enter a valid number.\n";
+ }
+  
+  else if (input == 0)
+  {
+    cout << "Would you like to clear your cart?\n";
+    cout << "1. Yes 2. No\n";
+  }
+
+  else
+  {
+    cout << "ERROR: Please enter a valid number.\n";
+    cin >> input;
+  }
+
+  while (input != b)
+
+ return 0;
+}
